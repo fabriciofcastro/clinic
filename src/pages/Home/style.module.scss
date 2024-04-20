@@ -1,0 +1,23 @@
+.container {
+  background-color: rgb(196, 128, 39);
+  width: 100%;
+  height: 50rem;
+
+    .navbar {
+      width: 100%;
+      height: 100%;
+      background-image: url("../assets/usen-parmanov.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      a {
+        font-weight: bold;
+
+        &.active {
+          color: red;
+        }
+      }
+
+        
+    }
+}
