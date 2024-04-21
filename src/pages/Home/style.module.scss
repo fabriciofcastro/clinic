@@ -1,23 +1,23 @@
 .container {
-  background-color: rgb(196, 128, 39);
+  background-color: transparent;
   width: 100%;
   height: 50rem;
+  overflow: hidden;
 
-    .navbar {
-      width: 100%;
-      height: 100%;
-      background-image: url("../assets/usen-parmanov.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      a {
-        font-weight: bold;
-
-        &.active {
-          color: red;
-        }
-      }
-
-        
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
+
+.swiper_container {
+  width: 80%;
+  height: 40rem;
+
+  .slide_img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  } 
+}
+

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 2%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+    .logo {
+
+
+      img {
+        width: 15rem;
+      }
+    }
+
+    .navbar {
+      
+      ul {
+        display: flex;
+        
+
+        li {
+          padding: 1.5rem;
+
+
+            a {
+              color: rgb(137, 5, 177);
+              font-weight: 500;
+            }
+        }
+      }
+      
+    }
+}
