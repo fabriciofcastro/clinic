@@ -1,23 +1,57 @@
 .container {
   background-color: transparent;
   width: 100%;
-  height: 50rem;
+  height: 60rem;
   overflow: hidden;
+  border: 3px solid red;
+
 
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-}
 
 .swiper_container {
-  width: 80%;
-  height: 40rem;
+  position: relative;
+  
+  
+  .swiperslide {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
 
-  .slide_img {
-    width: 100%;
-    height: 50rem;
-    object-fit: cover;
-  } 
+    .slide_img {
+      width: 100%;
+      height: 50rem;
+      object-fit: cover;
+    } 
+  }
+    
 }
+.avatar {
+      width: 30rem;
+      height: 30rem;
+      background-image: url('../../components/assets/Bg-Vector-flor.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      position: absolute;
+      bottom: -5rem;
+      right: 5rem;
+      z-index: 2222;
+
+      display: flex;
+      justify-content: flex-end;
+
+        img {
+          width: 25rem;
+          height: 30rem;
+        }
+    }
+
+
+}
+
+
 
