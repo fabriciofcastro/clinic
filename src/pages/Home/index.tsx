@@ -1,16 +1,19 @@
-
-import { SliderContainer } from './carossel/sliderContainer'
 import style from './style.module.scss'
 import acupuntura from '../../components/assets/Acupuntura1.png'
+import KeenSlider from '../../components/slider/sliderContainer'
+
 
 
 export const Home = () => {
 
+   
   return (
+    
     <div className={ style.container }>
+      
 
-      <SliderContainer />
-
+      <h1>home</h1>
+      <KeenSlider />
       <div className={ style.containerServices }>
         <div className={ `${style.cardsServices}` }>
           <h1>Acupuntura</h1>
