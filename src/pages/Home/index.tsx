@@ -11,8 +11,6 @@ export const Home = () => {
     
     <div className={ style.container }>
       
-
-      <h1>home</h1>
       <KeenSlider />
       <div className={ style.containerServices }>
         <div className={ `${style.cardsServices}` }>

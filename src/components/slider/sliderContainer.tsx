@@ -1,12 +1,11 @@
-
 import {
   useKeenSlider,
   KeenSliderPlugin,
   KeenSliderInstance,
 } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import style from "./styles.module.css"
-import { Slider_1 } from "./sliders"
+import style from "./styles.module.scss"
+import { Slider_1 } from "./slyder_components/sliders"
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
@@ -48,11 +47,13 @@ export default function SliderKeen() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     loop: true,
+    
 
   })
   const [thumbnailRef] = useKeenSlider<HTMLDivElement>(
     {
       initial: 0,
+      loop: true,
       slides: {
         perView: 3,
         spacing: 10,
@@ -104,7 +105,7 @@ export default function SliderKeen() {
       </div>
 
       <div ref={ thumbnailRef } className={`${"keen-slider"} ${style.thumbnail}`}>
-        <div className={`${"keen-slider__slide"} ${style.number_slide1}`}>1</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide1}`}>Massagem</div>
         <div className={`${"keen-slider__slide"} ${style.number_slide2}`}>2</div>
         <div className={`${"keen-slider__slide"} ${style.number_slide3}`}>3</div>
         <div className={`${"keen-slider__slide"} ${style.number_slide4}`}>4</div>

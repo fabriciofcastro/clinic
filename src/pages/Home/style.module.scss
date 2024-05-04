@@ -1,5 +1,5 @@
+@import '../../themes/themes.scss';
 .container { 
-   height: max-content;
 
  
 
@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     gap: 1.6rem;
-    background-color: rgb(60, 148, 119);
+    background-color: $bg3-color;
     padding: 3% 11%;
       
       .cardsServices {
@@ -17,7 +17,7 @@
         background-color: cadetblue;
        
         h1 {
-          background-color: darkkhaki;
+          background-color: $bg3-color;
           font-size: 1.6rem;
           width: max-content;
           padding: .8rem 1rem;
