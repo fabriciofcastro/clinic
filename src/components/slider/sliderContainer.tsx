@@ -6,6 +6,7 @@ import {
 import "keen-slider/keen-slider.min.css"
 import style from "./styles.module.scss"
 import { Slider_1 } from "./slyder_components/sliders"
+import { Slider_views } from "./slider_views/slider_views"
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
@@ -105,12 +106,14 @@ export default function SliderKeen() {
       </div>
 
       <div ref={ thumbnailRef } className={`${"keen-slider"} ${style.thumbnail}`}>
-        <div className={`${"keen-slider__slide"} ${style.number_slide1}`}>Massagem</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide2}`}>2</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide3}`}>3</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide4}`}>4</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide5}`}>5</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide6}`}>6</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views />
+        </div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>2</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>3</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>4</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>5</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>6</div>
       </div>
     </>
   )

@@ -8,13 +8,17 @@
 .thumbnail {
   width: 18rem;
   height: 10rem;
+ 
 }
 
 
 /* viewer sliders*/
 
-.number_slide1 {
+.number_slide {
   width: 18rem;
   height: 10rem;
-  background-color: chartreuse;
+  background-color: chartreuse; 
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
