@@ -1,0 +1,62 @@
+@import '../../themes/themes.scss';
+
+.container {
+  background-color: $bg2-color;
+  padding: 4% 8%;
+  color: $title-color;
+
+  .termos {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+
+      li {
+
+        a{
+          color: $title-color;
+
+          &:hover {
+            color: #0d250d;
+           }
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    img {
+      width: 20rem;
+    }
+    .contact {
+      display: flex;
+
+
+      ul {
+        display: flex;
+        gap: 1rem;
+       
+        li {}
+      }
+    }
+    
+    .company {
+      
+      a {
+         color: $title-color;
+         font-size: 1.8rem;
+
+         &:hover {
+          color: #0d250d;
+         }
+      }
+     
+    }
+    
+  }
+  
+}

@@ -1,0 +1,83 @@
+@import '../../../../themes/themes.scss';
+
+.slide1_container {
+  background-color: $bg3-color;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(50.5rem, 1fr));
+
+
+  .box_text {
+    background-color: $bg-color;
+    padding: 0 15rem;
+    display: flex;
+    align-items: center;
+
+    .content_text {
+      gap: 2rem;
+      display: flex;
+      
+      flex-flow: column;
+    }
+  }
+
+  .box_image {
+    background-color: chocolate;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: 0 0 5px #000;
+    transition: 1s ease;
+    cursor: pointer;
+    width: max-content;
+
+    &:active {
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: #b1b1b1;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide1_container {
+    grid-template-columns: 1fr;
+
+
+    .box_text {
+      padding: 4rem 4rem;
+      order: 2;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        word-break: break-word;
+        min-width: min-content
+      }
+    }
+
+    .box_image {
+      order: 1;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}

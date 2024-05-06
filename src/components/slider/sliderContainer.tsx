@@ -5,8 +5,11 @@ import {
 } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import style from "./styles.module.scss"
-import { Slider_1 } from "./slyder_components/sliders"
-import { Slider_views } from "./slider_views/slider_views"
+import { Slider_1 } from "./slyder_components/01/sliders"
+import { Slider_views, Slider_views2, Slider_views3, Slider_views4 } from "./slider_views/slider_views"
+import { Slider_2 } from "./slyder_components/02/sliders"
+import { Slider_3 } from "./slyder_components/03/sliders"
+import { Slider_4 } from "./slyder_components/04/sliders"
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
@@ -56,7 +59,7 @@ export default function SliderKeen() {
       initial: 0,
       loop: true,
       slides: {
-        perView: 3,
+        perView: 4,
         spacing: 10,
       },
     },
@@ -72,7 +75,7 @@ export default function SliderKeen() {
         if (mouseOver) return
         timeout = setTimeout(() => {
           slider.next()
-        }, 5000)
+        }, 3000)
       }
       slider.on("created", () => {
         slider.container.addEventListener("mouseover", () => {
@@ -98,9 +101,15 @@ export default function SliderKeen() {
         <div className={`${"keen-slider__slide"} ${"number-slide1"}`}>
           <Slider_1 />
         </div>
-        <div className={`${"keen-slider__slide"} ${"number-slide2"}`}>2</div>
-        <div className={`${"keen-slider__slide"} ${"number-slide3"}`}>3</div>
-        <div className={`${"keen-slider__slide"} ${"number-slide4"}`}>4</div>
+        <div className={`${"keen-slider__slide"} ${"number-slide2"}`}>
+        <Slider_2 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${"number-slide3"}`}>
+          <Slider_3 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${"number-slide4"}`}>
+          <Slider_4 />
+        </div>
         <div className={`${"keen-slider__slide"} ${"number-slide5"}`}>5</div>
         <div className={`${"keen-slider__slide"} ${"number-slide6"}`}>6</div>
       </div>
@@ -109,9 +118,15 @@ export default function SliderKeen() {
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
           <Slider_views />
         </div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>2</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>3</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>4</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views2 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views3 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views4 />
+        </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>5</div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>6</div>
       </div>

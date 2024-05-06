@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import style from './style.module.scss'
 import Logo from '../assets/logo.png'
 import LogoAss from '../assets/logoass.svg'
+import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react'
 
 export const Header = () => {
   return (
@@ -12,6 +13,11 @@ export const Header = () => {
         <h1>Li de Sá</h1>
       </div>
       <nav className={style.navbar}>
+        <div className={style.redesocial}>
+        <FacebookLogo  />
+        <LinkedinLogo />
+        <InstagramLogo />
+        </div>
         <ul>
           <li>
             <NavLink to="/">HOME</NavLink>
