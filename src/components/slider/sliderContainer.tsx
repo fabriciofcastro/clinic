@@ -10,6 +10,7 @@ import { Slider_views, Slider_views2, Slider_views3, Slider_views4 } from "./sli
 import { Slider_2 } from "./slyder_components/02/sliders"
 import { Slider_3 } from "./slyder_components/03/sliders"
 import { Slider_4 } from "./slyder_components/04/sliders"
+import { MutableRefObject } from "react"
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
