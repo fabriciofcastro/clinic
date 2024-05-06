@@ -1,5 +1,4 @@
 import style from './style.module.scss'
-import pedrasQuentes from '../../components/assets/pedras-quentes.jpg'
 import KeenSlider from '../../components/slider/sliderContainer'
 import sublinhado from '../../components/assets/AspectRatio.svg'
 import avatar from "../../components/assets/avatar.jpg"

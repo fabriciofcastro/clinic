@@ -39,7 +39,7 @@ export const Contact = () => {
               <div>
                 <div>
                   <label htmlFor="textarea">E-mail *</label>
-                 <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                 <textarea name="textarea" id="textarea" ></textarea>
                 </div>
                 
               </div>
