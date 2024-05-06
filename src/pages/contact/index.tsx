@@ -44,7 +44,9 @@ export const Contact = () => {
                 
               </div>
 
-              <button type='submit'>Enviar</button>
+              <button type='submit'>
+                Enviar
+              </button>
 
             </form>
           </div>

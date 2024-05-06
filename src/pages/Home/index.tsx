@@ -37,7 +37,7 @@ export const Home = () => {
             </p>
           </div>
 
-          <button type="button">Leia mais</button>
+          <button type="button">Leia mais</button> 
 
         </div>
       </div>
