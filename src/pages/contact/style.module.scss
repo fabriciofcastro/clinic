@@ -1,0 +1,36 @@
+@import '../../themes/themes.scss';
+
+.container {
+  background-color: $bg3-color ;
+  padding: 7%;
+
+  .content {
+
+    .title {
+      margin: 0 auto ;
+      font-family: 'Playfair Display';
+      color: $title-color;
+      line-height: 8rem;
+      background-color: $bg2-color;
+      height: 13.9rem;
+      max-width: 69.9rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+
+      h2 {
+       background-image: url('../../components/assets/AspectRatio.svg');
+       background-repeat: no-repeat;
+       background-position: bottom ;
+        font-size: 3.2rem;
+        padding: 0 8rem;
+        line-height: 6.5rem;
+      }
+    }
+  }
+
+
+
+}

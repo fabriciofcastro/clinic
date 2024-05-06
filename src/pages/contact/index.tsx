@@ -1,5 +1,13 @@
-import styles from './style.module.scss'
+import style from './style.module.scss'
 
 export const Contact = () => {
-  return <div className={styles.container}>Contact</div>
+  return (
+    <div className={ style.container }>
+      <div className={ style.content }>
+        <div className={ style.title }>
+          <h2>Contato</h2>
+        </div>
+      </div>
+
+    </div>)
 }
