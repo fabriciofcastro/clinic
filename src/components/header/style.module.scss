@@ -39,7 +39,7 @@
   .navbar {
 
     .redesocial {
-      font-size: 3.5rem;
+      
       display: flex;
       justify-content: flex-end;
       gap: 3rem;
@@ -50,9 +50,12 @@
         color: $title-color;
         transition: 600ms ease;
         cursor: pointer;
+        font-size: 3rem;
 
         &:hover {
           color: #035003;
+        
+          
         }
       }
 
