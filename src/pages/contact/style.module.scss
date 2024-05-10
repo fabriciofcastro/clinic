@@ -1,54 +1,69 @@
 @import '../../themes/themes.scss';
 
 .container {
-  background-color: $bg4-color ;
-  margin: auto 7%;
-  padding: 7%;
-
+  background-color: $bg4-color;
+  padding: 5% 4%;
 
   .content {
+    max-width: 98%;
+    margin: 0 auto;
     background-color: $bg3-color;
-    margin: 6% 0 0 0 ;
-    max-width: 100rem;
+    padding: 14% 10%;
+    position: relative;
 
-    .content_form {
-       max-width: 69.9rem;
-       margin: 0 auto;
-      
-       .title {
-        width: 100%;
-        font-family: 'Playfair Display';
-        color: $title-color;
-        line-height: 8rem;
+
+    .box_contact {
+      background-color: $bg-color;
+      position: relative;
+
+
+
+      .header_contact {
+        margin: 0 auto;
         background-color: $bg2-color;
-        height: 13.9rem;
-       
+        max-width: 69.9rem;
+        height: 16rem;
         display: flex;
-        flex-flow: column;
         justify-content: center;
         align-items: center;
+        flex-flow: column;
+        gap: 1rem;
         position: relative;
-        top: -7rem;
+        top: -8rem;
 
-        h2 {
-          background-image: url('../../components/assets/AspectRatio.svg');
-          background-repeat: no-repeat;
-          background-position: bottom;
-          font-size: 3.2rem;
-          padding: 0 8rem;
-          line-height: 6.5rem;
+
+        h1 {
+          color: $title-color;
+          font-family: "Playfair Display", serif;
+          font-size: 4.2rem;
         }
 
+        img {
+          width: 30rem;
+        }
       }
 
-      .infor_contact {
-        text-align: center;
+      .info_contact {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 2rem;
+        background-color: chartreuse;
+        margin-top: -1rem;
       }
+
+      .content_gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .text_input {
+          display: flex;
+          flex-flow: column;
+        }
+      }
+
     }
 
-
   }
-
-
 
 }

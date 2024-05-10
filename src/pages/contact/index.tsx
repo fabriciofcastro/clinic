@@ -1,57 +1,53 @@
 import style from './style.module.scss'
+import AspectRation from '../../components/assets/AspectRatio.svg'
 
 export const Contact = () => {
   return (
     <div className={ style.container }>
+
       <div className={ style.content }>
-        <div className={ style.content_form }>
+        <div className={ style.box_contact }>
 
-          <div className={ style.title }>
-            <h2>Contato</h2>
+          <div className={ style.header_contact }>
+            <h1>Contato</h1>
+            <img src={ AspectRation } alt="Imagem que represenha um sublinhado" />
           </div>
-          <div className={ style.infor_contact }>
+          <div className={ style.info_contact }>
+            <div>
             <p>
-              (11) 3456-7890 | info@meusite.com
-            </p>
-            <p> Rua Prates, 194 - Bom Retiro, São Paulo - SP, 01121-000
-            </p>
-
-          </div>
-          <div className={ style.container_form }>
-            <form action="POST">
-              <div>
-                <div>
-                  <label htmlFor="name">Nome *</label>
-                  <input type="text" id="name" required/>
-                </div>
-                <div>
-                  <label htmlFor="firstname">Sobrenome *</label>
-                  <input type="text" id="firstname" required />
-                </div>
+                (11) 3456-7890    |    info@meusite.com
+              </p>
+            </div>
+            <div>
+              <p>
+                Rua Prates, 194 - Bom Retiro, São Paulo - SP, 01121-000
+              </p>
+            </div>
+          </div> 
+          <form action="">
+            <div className={ style.Content_gridContainer }>
+              <div className={`${style.text_input} $style.text_input_name`}>
+                <label htmlFor="name">Nome *</label>
+                <input type="text" id="name" required/>
               </div>
-              <div>
-                <div>
-                  <label htmlFor="email">E-mail *</label>
-                  <input type="email" id="email" required/>
-                </div>
-                
+              <div className={`${style.text_input} ${style.text_input_sobrenome}`}>
+                <label htmlFor="Sobrenome">Sobrenome *</label>
+                <input type="text" id="Sobrenome" required/>
               </div>
-              <div>
-                <div>
-                  <label htmlFor="textarea">E-mail *</label>
-                 <textarea name="textarea" id="textarea" ></textarea>
-                </div>
-                
+              <div className={style.text_input}>
+                <label htmlFor="email">E-mail *</label>
+                <input type="text" id="email" required/>
               </div>
+              <div className={style.text_input}>
+                <label htmlFor="menssagem">E-mail *</label>
+                <input type="text" id="email" required/>
+              </div>
+              
 
-              <button type='submit'>
-                Enviar
-              </button>
-
-            </form>
-          </div>
-
+            </div>
+          </form>
         </div>
+
       </div>
 
 
