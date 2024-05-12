@@ -14,8 +14,8 @@ export const Contact = () => {
           </div>
           <div className={ style.info_contact }>
             <div>
-            <p>
-                (11) 3456-7890    |    info@meusite.com
+              <p>
+                (11) 3456-7890 | info@meusite.com
               </p>
             </div>
             <div>
@@ -23,28 +23,35 @@ export const Contact = () => {
                 Rua Prates, 194 - Bom Retiro, São Paulo - SP, 01121-000
               </p>
             </div>
-          </div> 
+          </div>
           <form action="">
-            <div className={ style.Content_gridContainer }>
-              <div className={`${style.text_input} $style.text_input_name`}>
-                <label htmlFor="name">Nome *</label>
-                <input type="text" id="name" required/>
-              </div>
-              <div className={`${style.text_input} ${style.text_input_sobrenome}`}>
-                <label htmlFor="Sobrenome">Sobrenome *</label>
-                <input type="text" id="Sobrenome" required/>
-              </div>
-              <div className={style.text_input}>
-                <label htmlFor="email">E-mail *</label>
-                <input type="text" id="email" required/>
-              </div>
-              <div className={style.text_input}>
-                <label htmlFor="menssagem">E-mail *</label>
-                <input type="text" id="email" required/>
-              </div>
-              
+            <div className={ style.form_gridContainer }>
+              <div className={ style.box_contact1 }>
+                <div className={ `${style.text_input}` }>                  
+                  <label htmlFor="name">Nome *</label>
+                  <input type="text" id="name" required />
+                </div>
 
+                <div className={ `${style.text_input}` }>
+                  <label htmlFor="Sobrenome">Sobrenome *</label>
+                  <input type="text" id="Sobrenome" required />
+                </div>
+              </div>
+
+
+              <div className={ `${style.text_input} ${style.input_email}` }>
+                <label htmlFor="email">E-mail *</label>
+                <input type="text" id="email" required />
+              </div>
+
+              <div className={ `${style.text_input} ${style.input_textarea}` }>
+                <label htmlFor="message">Dite sua mensagem *</label>
+                <textarea id="message" placeholder='Messangem aqui' required>
+
+                </textarea>
+              </div>
             </div>
+            <button type='submit'>Enviar</button>
           </form>
         </div>
 
