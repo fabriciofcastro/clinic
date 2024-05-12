@@ -1,5 +1,6 @@
 import style from './style.module.scss'
 import acupuntura from '../../../assets/acupuntura3.jpg'
+import { ButtonDefault } from '../../../button/buttonDefault'
 
 export const Slider_2 = () => {
   return (
@@ -14,7 +15,7 @@ export const Slider_2 = () => {
              "Esperar ter sede para cavar um poço pode ser tarde demais"
           </p>
 
-          <button type="button">Saber mais</button>
+          <ButtonDefault text='Saber mais'/>
 
         </div>
       </div>

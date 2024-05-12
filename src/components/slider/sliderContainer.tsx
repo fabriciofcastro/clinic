@@ -11,6 +11,8 @@ import { Slider_2 } from "./slyder_components/02/sliders"
 import { Slider_3 } from "./slyder_components/03/sliders"
 import { Slider_4 } from "./slyder_components/04/sliders"
 import { MutableRefObject } from "react"
+import { Slider_5 } from "./slyder_components/05/sliders"
+import { Slider_6 } from "./slyder_components/06/sliders"
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
@@ -111,8 +113,12 @@ export default function SliderKeen() {
         <div className={`${"keen-slider__slide"} ${"number-slide4"}`}>
           <Slider_4 />
         </div>
-        <div className={`${"keen-slider__slide"} ${"number-slide5"}`}>5</div>
-        <div className={`${"keen-slider__slide"} ${"number-slide6"}`}>6</div>
+        <div className={`${"keen-slider__slide"} ${"number-slide5"}`}>
+          <Slider_5 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${"number-slide6"}`}>
+          <Slider_6 />
+        </div>
       </div>
 
       <div ref={ thumbnailRef } className={`${"keen-slider"} ${style.thumbnail}`}>

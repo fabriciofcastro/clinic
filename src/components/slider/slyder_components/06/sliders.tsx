@@ -2,7 +2,7 @@ import style from './style.module.scss'
 import Florais_Bach from '../../../assets/terapia-florais-de-Bach.jpg'
 import { ButtonDefault } from '../../../button/buttonDefault'
 
-export const Slider_4 = () => {
+export const Slider_6 = () => {
   return (
     <div className={ style.slide1_container }>
       <div className={ `${style.box_text}` }>

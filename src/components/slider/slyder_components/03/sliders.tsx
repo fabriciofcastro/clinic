@@ -1,5 +1,6 @@
 import style from './style.module.scss'
 import ventosa from '../../../assets/terapia-de-ventosa.jpg'
+import { ButtonDefault } from '../../../button/buttonDefault'
 
 export const Slider_3 = () => {
   return (
@@ -14,7 +15,7 @@ export const Slider_3 = () => {
           Ventosaterapia destacam-se a melhora da circulação sanguínea e linfática, alívio da dor muscular, redução do estresse e ansiedade, diminuição da celulite e melhora da aparência da pele.
           </p>
 
-          <button type="button">Saber mais</button>
+          <ButtonDefault text='Saber mais' />
 
         </div>
       </div>

@@ -20,6 +20,15 @@
       display: flex;
       
       flex-flow: column;
+
+      .reflex_beneficio {
+        ul {
+
+          li {
+            padding: .3rem 0;
+          }
+        }
+      }
     }
   }
 
@@ -51,7 +60,6 @@
 
       p {
         word-break: break-word;
-        border: 1px solid;
         min-width: min-content
       }
     }

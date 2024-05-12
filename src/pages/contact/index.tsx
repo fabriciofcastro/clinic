@@ -54,7 +54,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className={style.buttonForm}>
-               <ButtonDefault />
+               <ButtonDefault text='Enviar'/>
             </div>
            
           </form>

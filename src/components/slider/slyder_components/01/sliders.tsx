@@ -15,7 +15,7 @@ export const Slider_1 = () => {
             MASSAGEM TERAPÊUTICA RESTAURADORA
           </p>
 
-          <ButtonDefault />
+          <ButtonDefault text="Saber mais"/>
         </div>
       </div>
       <div className={ `${style.box_image}` }>

@@ -1,7 +1,11 @@
 import style from './style.module.scss'
 
-export const ButtonDefault = () => {
+interface TextButtonProps {
+  text: string
+}
+
+export const ButtonDefault = ({text}: TextButtonProps) => {
   return (
-    <button className={style.button}>Enviar</button>
+    <button className={style.button}>{text}</button>
   )
 }
