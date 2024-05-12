@@ -6,7 +6,7 @@ import {
 import "keen-slider/keen-slider.min.css"
 import style from "./styles.module.scss"
 import { Slider_1 } from "./slyder_components/01/sliders"
-import { Slider_views, Slider_views2, Slider_views3, Slider_views4 } from "./slider_views/slider_views"
+import { Slider_views, Slider_views2, Slider_views3, Slider_views4, Slider_views5, Slider_views6 } from "./slider_views/slider_views"
 import { Slider_2 } from "./slyder_components/02/sliders"
 import { Slider_3 } from "./slyder_components/03/sliders"
 import { Slider_4 } from "./slyder_components/04/sliders"
@@ -134,8 +134,12 @@ export default function SliderKeen() {
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
           <Slider_views4 />
         </div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>5</div>
-        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>6</div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views5 />
+        </div>
+        <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
+          <Slider_views6 />
+        </div>
       </div>
     </>
   )

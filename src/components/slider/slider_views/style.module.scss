@@ -87,3 +87,25 @@
   }
   
 }
+
+.container5 {
+  width: 100%;
+  background: url("../../assets/reflexologia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 1rem 2rem;
+
+  h1 {
+    background-color: #000;
+    opacity: .5; 
+    border-radius: 5px 0 5px 0;
+    width: max-content;
+    color: #ffffff;
+    line-height: 3rem;
+    font-size: 2.3rem;
+    padding: .5rem;
+   
+  }
+}

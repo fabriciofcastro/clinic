@@ -38,3 +38,26 @@ export const Slider_views4 = () => {
     </div>
   )
 }
+
+
+export const Slider_views5 = () => {
+  return (
+    <div className={style.container5}>
+        <h1>
+          Terapia<br />
+          Florais de Bach
+        </h1>
+    </div>
+  )
+}
+
+export const Slider_views6 = () => {
+  return (
+    <div className={style.container6}>
+        <h1>
+          Terapia<br />
+          Florais de Bach
+        </h1>
+    </div>
+  )
+}

@@ -1,23 +1,23 @@
 import { NavLink } from 'react-router-dom'
 import style from './style.module.scss'
-import Logo from '../assets/logo.png'
-import LogoAss from '../assets/logoass.svg'
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react'
+import Logo from '../assets/logo2.png'
+import { FacebookLogo, InstagramLogo, LinkedinLogo, List } from 'phosphor-react'
 
 export const Header = () => {
   return (
     <div className={style.container}>
       <div className={style.logo}>
         <img src={ Logo } alt='Logo. Mulher fazendo massagem' />   
-        <img className={style.logo_image} src={LogoAss} alt="" />
-        <h1>Li de Sá</h1>
+        <h1>Massagem Terapeutica</h1>
       </div>
       <nav className={style.navbar}>
         <div className={style.redesocial}>
-        <FacebookLogo  />
-        <LinkedinLogo />
-        <InstagramLogo />
+          <FacebookLogo />
+          <LinkedinLogo />
+          <InstagramLogo />
+          <List className={ style.iconHambuguer } />
         </div>
+       
         <ul>
           <li>
             <NavLink to="/">HOME</NavLink>
