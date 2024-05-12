@@ -1,5 +1,6 @@
 import style from './style.module.scss'
 import massage from '../../../assets/relaxation_rock2.jpg'
+import { ButtonDefault } from '../../../button/buttonDefault'
 
 export const Slider_1 = () => {
   return (
@@ -14,8 +15,7 @@ export const Slider_1 = () => {
             MASSAGEM TERAPÊUTICA RESTAURADORA
           </p>
 
-          <button type="button">Saber mais</button>
-
+          <ButtonDefault />
         </div>
       </div>
       <div className={ `${style.box_image}` }>

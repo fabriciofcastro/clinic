@@ -1,5 +1,6 @@
 import style from './style.module.scss'
 import AspectRation from '../../components/assets/AspectRatio.svg'
+import { ButtonDefault } from '../../components/button/buttonDefault'
 
 export const Contact = () => {
   return (
@@ -27,6 +28,7 @@ export const Contact = () => {
           <form action="">
             <div className={ style.form_gridContainer }>
               <div className={ style.box_contact1 }>
+              
                 <div className={ `${style.text_input}` }>                  
                   <label htmlFor="name">Nome *</label>
                   <input type="text" id="name" required />
@@ -46,12 +48,15 @@ export const Contact = () => {
 
               <div className={ `${style.text_input} ${style.input_textarea}` }>
                 <label htmlFor="message">Dite sua mensagem *</label>
-                <textarea id="message" placeholder='Messangem aqui' required>
+                <textarea id="message" placeholder='...' required>
 
                 </textarea>
               </div>
             </div>
-            <button type='submit'>Enviar</button>
+            <div className={style.buttonForm}>
+               <ButtonDefault />
+            </div>
+           
           </form>
         </div>
 

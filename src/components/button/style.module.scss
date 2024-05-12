@@ -1,0 +1,20 @@
+@import '../../themes/themes.scss';
+
+button {
+  width: max-content;
+  padding: 2rem 6rem;
+  background-color: $text-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px #415941;
+  transition: 500ms ease;
+
+  &:hover {
+    background-color: #283f28;
+  }
+
+  &:active {
+    box-shadow: 1px 1px 0px #415941;
+  }
+}
