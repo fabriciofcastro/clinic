@@ -40,7 +40,7 @@ function ThumbnailPlugin(
       if (!mainRef.current) return
       addActive(slider.track.details.rel)
       addClickEvents()
-      mainRef.current.on("animationStarted", (main: any) => {
+      mainRef.current.on("animationStarted", (main) => {
         removeActive()
         const next = main.animator.targetIdx || 0
         addActive(main.track.absToRel(next))
@@ -54,15 +54,13 @@ export default function SliderKeen() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     loop: true,
-    
-
   })
   const [thumbnailRef] = useKeenSlider<HTMLDivElement>(
     {
       initial: 0,
       loop: true,
       slides: {
-        perView: 4,
+        perView: 3,
         spacing: 10,
       },
     },
@@ -86,7 +84,7 @@ export default function SliderKeen() {
           clearNextTimeout()
         })
         slider.container.addEventListener("mouseout", () => {
-          mouseOver = false
+          mouseOver = true
           nextTimeout()
         })
         nextTimeout()
