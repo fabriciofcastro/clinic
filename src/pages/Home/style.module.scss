@@ -6,16 +6,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(49rem, 1fr));
     padding: 4rem 4rem;
-    flex-wrap: wrap;
+
     background-color: #fff;
        
     .about_image {
       display: flex;
       justify-content: center;
+      align-items: flex-end;
       background-color: #efefef;
 
       img {
-        width: 60%;
+        width: 50%;
+    
       }
     }
     .about_text {
@@ -37,6 +39,7 @@
         position: absolute;
         top: 10rem;
         left: -1rem;
+        
       }
 
       button {
@@ -70,6 +73,14 @@
         
       }
     }
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 
+    repeat(auto-fit, minmax(0rem, 1fr));
 
   }
 }

@@ -1,9 +1,13 @@
 import style from './style.module.scss'
 
-export const Slider_views = () => {
+interface SliderViewerProps {
+  title: string
+}
+
+export const Slider_views = ({title}: SliderViewerProps) => {
   return (
     <div className={style.container}>
-        <h1>Masagem</h1>
+        <h1>{title}</h1>
     </div>
   )
 }

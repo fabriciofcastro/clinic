@@ -5,14 +5,14 @@ import {
 } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import style from "./styles.module.scss"
-import { Slider_1 } from "./slyder_components/01/sliders"
-import { Slider_views, Slider_views2, Slider_views3, Slider_views4, Slider_views5, Slider_views6 } from "./slider_views/slider_views"
-import { Slider_2 } from "./slyder_components/02/sliders"
-import { Slider_3 } from "./slyder_components/03/sliders"
-import { Slider_4 } from "./slyder_components/04/sliders"
+import { Slider } from "./slyder_components/sliders"
+import { Slider_views} from "./slider_views/slider_views"
+import relaxamento from "../assets/massagem-pedras-quentes.jpg"
+import acupuntura from "../assets/acupuntura6.jpg"
+import ventosa from "../assets/terapia-de-ventosa.jpg"
+
 import { MutableRefObject } from "react"
-import { Slider_5 } from "./slyder_components/05/sliders"
-import { Slider_6 } from "./slyder_components/06/sliders"
+
 
 function ThumbnailPlugin(
   mainRef: MutableRefObject<KeenSliderInstance | null>
@@ -98,45 +98,49 @@ export default function SliderKeen() {
 
   return (
     <>
-      <div ref={ sliderRef } className={`${"keen-slider"} ${style.keen_slider__container}`}>
+      <div ref={ sliderRef } className={ `${"keen-slider"} ${style.keen_slider_container}` }>
         <div className={`${"keen-slider__slide"} ${"number-slide1"}`}>
-          <Slider_1 />
+          <Slider title="BEM ESTAR O TEMPOR TODO" content="Relaxe, renove-se, renasça" message="MASSAGEM TERAPÊUTICA RESTAURADORA" image={ acupuntura } />
         </div>
+
         <div className={`${"keen-slider__slide"} ${"number-slide2"}`}>
-        <Slider_2 />
+          <Slider title="BOA SAÚDE É O BEM MAIS VALIOSO" content="Viva sem tensão durante o dia com a acupuntura" message="Esperar ter sede para cavar um poço pode ser tarde demais" image={ acupuntura } />
         </div>
+
         <div className={`${"keen-slider__slide"} ${"number-slide3"}`}>
-          <Slider_3 />
+          <Slider title="LIBERTE-SE DA DOR" content="Viva melhor com a técnica ventosaterapia" message="Ventosaterapia destacam-se a melhora da circulação sanguínea e linfática, alívio da dor muscular, redução do estresse e ansiedade, diminuição da celulite e melhora da aparência da pele." image={ acupuntura } />
         </div>
+
         <div className={`${"keen-slider__slide"} ${"number-slide4"}`}>
-          <Slider_4 />
+          <Slider title="LIBERTE SUA MENTE E SEJA FELIZ" content="Equilíbrios emocionais e mentais com terapia Florais de Bach." message="Cada essência floral é destinada a tratar um aspecto emocional particular, como medo, ansiedade, tristeza, raiva ou falta de confiança." image={ acupuntura } />
         </div>
+
         <div className={`${"keen-slider__slide"} ${"number-slide5"}`}>
-          <Slider_5 />
+          <Slider title="RELAXE SEU CORPO TODO" content="A reflexologia é indicada para complementar o tratamento de:" message="teste" image={ acupuntura } />
         </div>
         <div className={`${"keen-slider__slide"} ${"number-slide6"}`}>
-          <Slider_6 />
+          <Slider title="LIBERTE SUA MENTE E SEJA FELIZ" content="Equilíbrios emocionais e mentais com terapia Florais de Bach." message="Cada essência floral é destinada a tratar um aspecto emocional particular, como medo, ansiedade, tristeza, raiva ou falta de confiança." image={ acupuntura } />
         </div>
       </div>
 
       <div ref={ thumbnailRef } className={`${"keen-slider"} ${style.thumbnail}`}>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views />
+          <Slider_views title="Massagem terapéutica"/>
         </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views2 />
+          <Slider_views title="Acupuntura"/>
         </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views3 />
+          <Slider_views title="Terapia de ventosa"/>
         </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views4 />
+          <Slider_views title="Terapias de florais"/>
         </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views5 />
+          <Slider_views title="Terapias de florais"/>
         </div>
         <div className={`${"keen-slider__slide"} ${style.number_slide}`}>
-          <Slider_views6 />
+          <Slider_views title="Terapias de florais" />
         </div>
       </div>
     </>

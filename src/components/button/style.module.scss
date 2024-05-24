@@ -1,8 +1,8 @@
 @import '../../themes/themes.scss';
 
-button {
-  width: max-content;
-  padding: 2rem 6rem;
+.button {
+  width: max(18rem, 14vw);
+  padding: 2rem 0;
   background-color: $text-color;
   color: #fff;
   border: none;
@@ -16,5 +16,12 @@ button {
 
   &:active {
     box-shadow: 1px 1px 0px #415941;
+  }
+}
+
+@media (max-width: 540px) {
+  .button {
+    padding: 1rem 0rem;
+    width: max-content;
   }
 }

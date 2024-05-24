@@ -14,8 +14,10 @@ export const Footer = () => {
           <li><a href="#">Política de Privacidade</a></li>
         </ul>
       </div>
+     
       <div className={ style.logo }>
         <img src={ Logo } alt="logo" />
+        
         <div className={ style.contact }>
           <ul>
             <li>(11) 3456-7890</li>
@@ -31,7 +33,10 @@ export const Footer = () => {
           </Link>
           
           </p>
-        </div></div>
+        </div>
+
+      </div>
+      
     </footer>
   )
 }
